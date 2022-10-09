@@ -1,14 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Intro Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <title>FE Start 13.09</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+<div class="container ">
+    <div class="custom-block">
+        <div class="left-part">
+            <input type="text" class="form-control" placeholder="Search">
+            <p>Some text</p>
+            <button class="btn btn-default">left</button>
+        </div>
 
+        <button class="btn btn-lg btn-success">Submit</button>
     </div>
+</div>
+<div class="container">
+    <div class="row">
+        <a class="social-icon social-icon-facebook" href="https://facebook.com"></a>
+        <a class="social-icon social-icon-youtube" href="https://youtube.com"></a>
+
+        <ul class="col-sm-12 list">
+            <li>welcome 1</li>
+            <li>welcome 2</li>
+            <li>welcome 3</li>
+            <li>welcome 4</li>
+            <li>welcome 5</li>
+            <li>welcome 6</li>
+            <li>welcome 7</li>
+            <li>welcome 8</li>
+            <li>welcome 9</li>
+            <li>welcome 10</li>
+        </ul>
+    </div>
+    <form class="login" method="post">
+        <h2>Form</h2>
+        <input class="form-control" placeholder="Enter your login" minlength="5" required name="login">
+        <input class="form-control" placeholder="Enter your phone" type="tel" required value="+380633333333" disabled name="phone">
+        <input class="form-control" placeholder="Enter email" type="email" required name="email">
+        <input class="form-control" placeholder="Enter password" type="password" name="password">
+        <input class="form-control" placeholder="Enter your age" type="number" min="0" max="100" name="age">
+        <select class="form-control" name="country" required>
+            <option value="">Select Country</option>
+            <option selected value="UA">Ukraine</option>
+            <option value="DE">Germany</option>
+            <option value="PL">Poland</option>
+            <option value="ES">Spain</option>
+        </select>
+        <input type="checkbox" id="agree-checkbox" checked>
+        <label for="agree-checkbox">I agree with policy</label>
+
+        <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+        <textarea class="form-control" rows="3" placeholder="Leave your comment here"></textarea>
+        <button class="btn btn-danger" type="reset">Cancel</button>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>
+<div class="container">
+    <div class="custom-dropdown" tabindex="0">
+        <div>Select Country</div>
+        <ul>
+            <li>Ukraine</li>
+            <li>Germany</li>
+            <li>France</li>
+            <li>Italy</li>
+            <li>Spain</li>
+        </ul>
+    </div>
+
+    <table class="table table-striped table-bordered"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Enter a valid email address<span class="label label-default">Default</span>
+        <button class="btn btn-danger">Check email</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Middle 1</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <button class="toggle-list">Open it</button>
+    <ul class="list">
+        <li>Bread <span class="glyphicon glyphicon-send" aria-hidden="true"></span></li>
+        <li>Butter</li>
+        <li>Eggs</li>
+        <li>Flavour</li>
+    </ul>
+</div>
+<div class="container">
+    <div class="products row">
+        <h3 class="col-xs-12">Products</h3>
+        <div class="product col-sm-offset-1 col-sm-5 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-sm-5 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+                <img src="./images/product_1.webp">
+            </div>
+            <h3>Air Jordan XXXVI Low</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, optio.</p>
+            <p class="price">404.97</p>
+            <a class="add-to-cart" href="https://www.nike.com/pl/t/meskie-buty-do-koszykowki-air-jordan-xxxvi-low-Kx1kvb/DH0833-063">
+                <img src="./images/addToCart.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+<a href="#top" id="go-top">
+    Наверх
+</a>
 </body>
 </html>
